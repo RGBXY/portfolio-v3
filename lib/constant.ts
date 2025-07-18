@@ -18,3 +18,30 @@ export const expertise_data = [
     tools: [{ name: "Figma" }, { name: "User Interface" }, { name: "user Experience" }, { name: "Landing Page" }],
   },
 ];
+
+export const project_data = [
+  {
+    id: 1,
+    name: "Cashira POS",
+    description: "Point of Sale website",
+    tools: [{ name: "Laravel" }, { name: "VueJS" }],
+  },
+  {
+    id: 2,
+    name: "Jiyukai",
+    description: "Blog Website",
+    tools: [{ name: "NextJS" }],
+  },
+  {
+    id: 3,
+    name: "Portfolio V2",
+    description: "Portfolio Website",
+    tools: [{ name: "NextJS" }],
+  },
+  {
+    id: 4,
+    name: "Gorakumo",
+    description: "Movie Rating Website",
+    tools: [{ name: "NextJS" }],
+  },
+];

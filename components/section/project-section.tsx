@@ -1,6 +1,7 @@
 import React from "react";
 import Heading from "../ui/heading";
 import ProjectCard from "../card/project-card";
+import { project_data } from "@/lib/constant";
 
 const ProjectSection = () => {
   return (
@@ -9,11 +10,10 @@ const ProjectSection = () => {
         <Heading title="Project" />
         <p className="">Im a fullstack web developer and could help your tech problem, just call me and i will serving you with all my heart.</p>
 
-        <div className="grid grid-cols-2 gap-4 w-full mt-6">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+        <div className="grid grid-cols-2 gap-6 w-full mt-6">
+          {project_data.map((item) => (
+            <ProjectCard key={item.id} project={item} />
+          ))}
         </div>
       </div>
     </section>

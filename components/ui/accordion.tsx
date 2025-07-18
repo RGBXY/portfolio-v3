@@ -39,8 +39,8 @@ const Accordion = ({ expertise, index, state }: expertiseProps) => {
             style={{ overflow: "hidden" }}
             className="flex flex-col gap-4 overflow-hidden"
           >
-            <div className="flex items-center gap-8 h-fit pt-4">
-              <p className="flex-1 text-gray-900">{expertise.description}</p>
+            <div className="flex items-center justify-between gap-8 h-fit pt-4">
+              <p className="w-[70%] text-gray-900">{expertise.description}</p>
               <div className="h-20 w-30 bg-blue-200 border"></div>
             </div>
             <div className="flex items-center flex-wrap gap-3 text-sm text-gray-700">

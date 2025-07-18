@@ -1,18 +1,33 @@
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import React from "react";
 
-const ProjectCard = () => {
+interface toolsProject {
+  name: string;
+}
+
+interface projectItem {
+  id: number;
+  name: string;
+  description: string;
+  tools: toolsProject[];
+}
+
+interface projectProps {
+  project: projectItem;
+}
+
+const ProjectCard = ({ project }: projectProps) => {
   return (
     <div className="w-full">
-      <Card>
-        <CardHeader>
-          <div className="h-42 w-full bg-blue-200 border"></div>
+      <Card className="py-0 bg-none">
+        <CardHeader className="">
+          <div className="h-50 w-full bg-blue-200"></div>
         </CardHeader>
-        <CardContent>
-          <p>Cashira</p>
+        <CardContent className="">
+          <p className="text-xl">{project.name}</p>
         </CardContent>
         <CardFooter>
-          <p>Card Footer</p>
+          <p className="text-sm">{project.description}</p>
         </CardFooter>
       </Card>
     </div>
