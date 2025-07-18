@@ -116,6 +116,10 @@
 }
 
 @layer base {
+  p {
+    @apply tracking-wider leading-7;
+  }
+
   * {
     @apply border-border outline-ring/50;
   }

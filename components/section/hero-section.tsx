@@ -12,7 +12,7 @@ const HeroSection = () => {
             <p className="text-lg font-koushiki-sans font-semibold tracking-widest text-gray-700">Fullstack Web Developer</p>
           </div>
         </div>
-        <div className="tracking-wider leading-7 space-y-5">
+        <div className="space-y-5">
           <p>
             Im a fullstack web developer and could help your tech problem, just call me and i will serving you with all my heart. I have 2 years experience in this battlefield and ready to take a further step with you. Im a tech eunthusiast
             and have a big curiousity with a technology.
