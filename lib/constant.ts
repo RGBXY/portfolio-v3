@@ -45,3 +45,18 @@ export const project_data = [
     tools: [{ name: "NextJS" }],
   },
 ];
+
+export const experience_data = [
+  {
+    company: "CAN Creative",
+    role: "Front-end Dev",
+    time: "JUN 2024 - DEC 2024",
+    link: "https://can.co.id",
+  },
+  {
+    company: "Freelance",
+    role: "Front-end Dev",
+    time: "JUL 2025 - PRESENT",
+    link: "/",
+  },
+];

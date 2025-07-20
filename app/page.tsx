@@ -6,11 +6,11 @@ import ProjectSection from "@/components/section/project-section";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-12 w-full justify-center items-center pb-12">
+    <main className="flex flex-col gap-18 w-full justify-center items-center pb-12">
       <HeroSection />
       <ExpertiseSection />
-      <ProjectSection />
       <ExperienceSection />
+      <ProjectSection />
       <ContactSection />
     </main>
   );

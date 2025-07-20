@@ -1,39 +1,36 @@
-"use client";
+import Link from "next/link";
+import React from "react";
 
-import { cn } from "@/lib/utils";
-import { X } from "lucide-react";
-import React, { useState } from "react";
-
-interface expertiseItem {
-  name: string;
-  description: string;
-  tools: string[];
+interface experienceItem {
+  company: string;
+  role: string;
+  time: string;
+  link: string;
 }
 
-interface expertiseProps {
-  expertise: expertiseItem;
+interface experienceProps {
+  experience: experienceItem;
 }
 
-const Haha = ({ expertise }: expertiseProps) => {
-  const [collapse, setCollapse] = useState(false);
-
+const ExperienceCard = ({ experience }: experienceProps) => {
   return (
-    <div onClick={() => setCollapse(!collapse)} className="space-y-3 border-b border-black py-6">
-      <div className="w-full flex justify-between items-center">
-        <p className="text- font-semibold font-koushiki-sans">{expertise.name}</p>
-        <X size={18} className={`${collapse ? "rotate-0" : "rotate-45"} transition-all ease-in-out`} />
+    <div className="flex justify-center gap-6 h-fit">
+      <div className="w-1/2 shrink-0 text-xs text-end font-semibold">
+        <p>{experience.time}</p>
       </div>
-      <div className={cn(collapse ? "" : "h-0 overflow-hidden opacity-0", "flex-1 flex flex-col gap-3 transition-all")}>
-        <p>{expertise.description}</p>
-        <div className="flex items-center flex-wrap gap-3 text-sm text-gray-600">
-          <p>Tools :</p>
-          {expertise.tools.map((item) => (
-            <p key={item}>{item},</p>
-          ))}
-        </div>
+      <div className="pt-2.5">
+        <div className="h-1.5 w-1.5 bg-black rotate-45"></div>
+        <div className="mx-auto h-[calc(100%+35px)] w-[1px] bg-black "></div>
+      </div>
+      <div className="w-1/2 shrink-0">
+        <Link target="__blank" href={experience.link}>
+          <h1 className="text-xl font-bold font-katsumi">{experience.company}</h1>
+        </Link>
+        <p className="font-semibold text-gray-800 font-koushiki-sans">{experience.role}</p>
+        {/* <p className="text-sm mt-2 text-gray-700" >Here i make a lot of web design and made it to be alive with my front-end skills. kjasdkjsbd jasdbjhas djhbd</p> */}
       </div>
     </div>
   );
 };
 
-export default Haha;
+export default ExperienceCard;

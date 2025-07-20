@@ -17,7 +17,7 @@ const ExpertiseSection = () => {
       <div className="space-y-4">
         <Heading title="Expertise" />
         <p>In my journey, i learn a lot of things and try to keep it burn. Now the fire still on and could helping burn away your tech problems.</p>
-    
+
         <div>
           {expertise_data.map((data, index) => (
             <div key={data.id} className="cursor-pointer" onClick={() => accordionFnc(index)}>

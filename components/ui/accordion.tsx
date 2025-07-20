@@ -25,7 +25,7 @@ const Accordion = ({ expertise, index, state }: expertiseProps) => {
   return (
     <div className={`${accordionStatus ? "" : ""} flex flex-col border-b border-black py-6`}>
       <div className="w-full flex justify-between items-center">
-        <p className="text-lg font-semibold font-koushiki-sans ">{expertise.name}</p>
+        <p className="text-lg font-semibold font-katsumi ">{expertise.name}</p>
         <X size={18} className={`${accordionStatus ? "rotate-0" : "rotate-45"} transition-all ease-in-out`} />
       </div>
 

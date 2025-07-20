@@ -1,4 +1,4 @@
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import React from "react";
 
 interface toolsProject {
@@ -24,11 +24,9 @@ const ProjectCard = ({ project }: projectProps) => {
           <div className="h-50 w-full bg-blue-200"></div>
         </CardHeader>
         <CardContent className="">
-          <p className="text-xl">{project.name}</p>
-        </CardContent>
-        <CardFooter>
+          <p className="text-xl font-katsumi font-semibold">{project.name}</p>
           <p className="text-sm">{project.description}</p>
-        </CardFooter>
+        </CardContent>
       </Card>
     </div>
   );
