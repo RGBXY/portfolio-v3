@@ -23,25 +23,29 @@ export const project_data = [
   {
     id: 1,
     name: "Cashira POS",
-    description: "Point of Sale website",
+    sub_title: "Point of Sale website",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis cupiditate dolorem pariatur ipsa rem quos in voluptas quae unde. Est.",
     tools: [{ name: "Laravel" }, { name: "VueJS" }],
   },
   {
     id: 2,
     name: "Jiyukai",
-    description: "Blog Website",
+    sub_title: "Blog Website",
+    description: "Sit amet consectetur, adipisicing elit. Nobis cupiditate dolorem pariatur ipsa rem quos in voluptas quae unde. Est.",
     tools: [{ name: "NextJS" }],
   },
   {
     id: 3,
     name: "Portfolio V2",
-    description: "Portfolio Website",
+    sub_title: "Portfolio Website",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis cupiditate dolorem pariatur ipsa rem quos in voluptas quae unde. Est.",
     tools: [{ name: "NextJS" }],
   },
   {
     id: 4,
     name: "Gorakumo",
-    description: "Movie Rating Website",
+    sub_title: "Movie Rating Website",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis cupiditate dolorem pariatur ipsa rem quos in voluptas quae unde. Est.",
     tools: [{ name: "NextJS" }],
   },
 ];
