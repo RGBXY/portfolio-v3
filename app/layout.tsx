@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/shared/navbar";
 import localFont from "next/font/local";
 import { Instrument_Sans, Montserrat } from "next/font/google";
+import Footer from "@/components/shared/footer";
 
 const katsumi = localFont({
   src: "/fonts/KATSUMI.ttf",
@@ -30,11 +31,6 @@ const koushikiSans = localFont({
   variable: "--font-KoushikiSans",
 });
 
-const montserrat = Montserrat({
-  weight: "400",
-  subsets: ["latin"],
-});
-
 const instrumentSans = Instrument_Sans({
   weight: "400",
   subsets: ["latin"],
@@ -55,6 +51,7 @@ export default function RootLayout({
       <body className={`${katsumi.className} ${koushikiSans.className} ${instrumentSans.className} antialiased`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

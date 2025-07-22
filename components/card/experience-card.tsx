@@ -23,10 +23,10 @@ const ExperienceCard = ({ experience }: experienceProps) => {
         <div className="mx-auto h-[calc(100%+35px)] w-[1px] bg-black "></div>
       </div>
       <div className="w-1/2 shrink-0">
-        <Link target="__blank" href={experience.link}>
+        <Link target="__blank" className="hover:text-gray-500" href={experience.link}>
           <h1 className="text-xl font-bold font-katsumi">{experience.company}</h1>
         </Link>
-        <p className="font-semibold text-gray-800 font-koushiki-sans">{experience.role}</p>
+        <p className="font-semibold font-koushiki-sans">{experience.role}</p>
         {/* <p className="text-sm mt-2 text-gray-700" >Here i make a lot of web design and made it to be alive with my front-end skills. kjasdkjsbd jasdbjhas djhbd</p> */}
       </div>
     </div>

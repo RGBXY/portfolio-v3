@@ -25,7 +25,7 @@ const Accordion = ({ expertise, index, state }: expertiseProps) => {
   return (
     <div className={`${accordionStatus ? "" : ""} flex flex-col border-b border-black py-6`}>
       <div className="w-full flex justify-between items-center">
-        <p className="text-lg font-semibold font-katsumi ">{expertise.name}</p>
+        <h1 className="text-lg font-semibold font-katsumi">{expertise.name}</h1>
         <X size={18} className={`${accordionStatus ? "rotate-0" : "rotate-45"} transition-all ease-in-out`} />
       </div>
 
@@ -39,16 +39,15 @@ const Accordion = ({ expertise, index, state }: expertiseProps) => {
             style={{ overflow: "hidden" }}
             className="flex flex-col gap-4 overflow-hidden"
           >
-            <div className="flex items-center justify-between gap-8 h-fit pt-4">
-              <p className="w-[70%] text-gray-900">{expertise.description}</p>
+            <div className="flex items-center justify-between gap-8 pt-4 h-fit">
+              <p className="w-[70%] text-gray-800">{expertise.description}</p>
               <div className="h-20 w-30 bg-blue-200 border"></div>
             </div>
-            <div className="flex items-center flex-wrap gap-3 text-sm text-gray-700">
-              <p>Tools :</p>
-              {expertise.tools.map((item, index) => (
-                <p key={item.name}>
-                  {item.name} {index + 1 !== expertise.tools.length && ","}
-                </p>
+            <div className="flex items-center gap-2 pt-2.5 text-sm">
+              {expertise.tools.map((item) => (
+                <div className="px-2 py-0.5  bg-[#252525] text-white text-xs" key={item.name}>
+                  {item.name}
+                </div>
               ))}
             </div>
           </motion.div>

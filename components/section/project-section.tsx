@@ -10,13 +10,15 @@ const ProjectSection = () => {
   const [selectedId, setSelectedId] = useState<number>(1);
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
+  const projectDataLength = project_data.length;
+
   const handleTitleClick = (id: number) => {
     setSelectedId(id);
     setIsOpen(true);
   };
 
   const next = () => {
-    if (selectedId < project_data.length) {
+    if (selectedId < projectDataLength) {
       setSelectedId((prev) => prev + 1);
     }
   };
@@ -28,16 +30,16 @@ const ProjectSection = () => {
   return (
     <section id="project" className="max-w-2xl w-full flex items-center">
       <div className="space-y-4 w-full">
-        <Heading title="Project" />
-        <p className="">Im a fullstack web developer and could help your tech problem, just call me and i will serving you with all my heart.</p>
+        <Heading title="Things I’ve Done" />
+        <p className="">Things I’ve built with heart and curiosity — each project a piece of my growth and passion for solving real problems.</p>
 
-        <div className="grid grid-cols-2 gap-6 w-full mt-6">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-6 w-full pt-4">
           {project_data.map((item) => (
             <ProjectCard key={item.id} project={item} onClickTitle={() => handleTitleClick(item.id)} />
           ))}
         </div>
 
-        <ProjectDrawer selectedId={selectedId} isOpen={isOpen} onClose={() => setIsOpen(false)} onNext={next} onPrev={prev} />
+        <ProjectDrawer selectedId={selectedId} isOpen={isOpen} onClose={() => setIsOpen(false)} projectDataLength={projectDataLength} onNext={next} onPrev={prev} />
       </div>
     </section>
   );
