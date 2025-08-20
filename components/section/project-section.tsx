@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import Heading from "../ui/heading";
-import ProjectCard from "../card/project-card";
 import { project_data } from "@/lib/constant";
+import Heading from "@/components/ui/heading";
+import ProjectCard from "../card/project-card";
 import ProjectDrawer from "../modal/project-drawer";
 
 const ProjectSection = () => {
@@ -33,7 +33,7 @@ const ProjectSection = () => {
         <Heading title="Things I’ve Done" />
         <p className="">Things I’ve built with heart and curiosity — each project a piece of my growth and passion for solving real problems.</p>
 
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-6 w-full pt-4">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-x-10 gap-y-8 w-full pt-4">
           {project_data.map((item) => (
             <ProjectCard key={item.id} project={item} onClickTitle={() => handleTitleClick(item.id)} />
           ))}

@@ -3,6 +3,7 @@ import { Drawer, DrawerClose, DrawerContent, DrawerHeader, DrawerTitle } from ".
 import { project_data } from "@/lib/constant";
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface projectDrawerProp {
   selectedId: number | null;
@@ -29,7 +30,7 @@ const ProjectDrawer = ({ selectedId, isOpen, projectDataLength, onClose, onNext,
           <div className="space-y-3">
             <h1 className="text-5xl font-katsumi font-bold">{selectedProject?.name}</h1>
 
-            <p className="w-[70%]">{selectedProject?.description}</p>
+            <p className="md:w-[70%]">{selectedProject?.description}</p>
             <div className="flex gap-2 mt-5">
               {selectedProject?.tools.map((item) => (
                 <div className="px-2 py-0.5  bg-[#252525] text-white text-sm" key={item.name}>
@@ -54,7 +55,9 @@ const ProjectDrawer = ({ selectedId, isOpen, projectDataLength, onClose, onNext,
             </div>
           </div>
 
-          <div className="aspect-3/2 w-full h-[400px] bg-blue-200"></div>
+          {/* <div className="aspect-3/2 w-full h-[400px] bg-blue-200"></div> */}
+
+          <Image src={selectedProject?.image || "/assets/image.png"} alt="project-image" height={200} width={200} className="aspect-3/2 w-full h-[400px] object-cover bg-blue-200" />
 
           <div className="absolute right-10 bottom-10">
             {selectedProject?.id} / {projectDataLength}

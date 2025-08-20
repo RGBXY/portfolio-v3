@@ -7,8 +7,14 @@
   --font-katsumi: "katsumi";
   --font-koushiki-sans: "koushikiSans";
   --font-instrumentSans: "instrumentSans";
+  --font-jakartaSans: "jakartaSans";
+  --font-drip: "drip";
+  --font-poppins: "poppins";
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-halo: #4176fd;
+  --color-halo2: #195bff;
+  --color-halo3: #1e3178;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -124,7 +130,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[#000000] text-[#f3f1f1];
   }
 }
 

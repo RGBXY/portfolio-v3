@@ -1,6 +1,7 @@
 import { X } from "lucide-react";
 import React from "react";
 import { AnimatePresence, motion } from "motion/react";
+import Image from "next/image";
 
 interface expertiseToolsItem {
   name: string;
@@ -11,6 +12,7 @@ interface expertiseItem {
   name: string;
   description: string;
   tools: expertiseToolsItem[];
+  image: string;
 }
 
 interface expertiseProps {
@@ -40,8 +42,9 @@ const Accordion = ({ expertise, index, state }: expertiseProps) => {
             className="flex flex-col gap-4 overflow-hidden"
           >
             <div className="flex items-center justify-between gap-8 pt-4 h-fit">
-              <p className="w-[70%] text-gray-800">{expertise.description}</p>
-              <div className="h-20 w-30 bg-blue-200 border"></div>
+              <p className="md:w-[70%] text-gray-800">{expertise.description}</p>
+              {/* <div className="h-20 w-30 bg-blue-200 border"></div> */}
+              <Image src={expertise.image} alt={expertise.name} height={200} width={200} className="w-30 h-20 object-contain aspect-3/2 hidden md:block" />
             </div>
             <div className="flex items-center gap-2 pt-2.5 text-sm">
               {expertise.tools.map((item) => (

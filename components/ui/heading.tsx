@@ -8,8 +8,8 @@ interface headerProps {
 
 const Heading = ({ title, className }: headerProps) => {
   return (
-    <div>
-      <h1 className={cn(className, "font-koushiki-sans text-2xl font-semibold tracking-widest uppercase")}>{title}</h1>
+    <div className="text-center flex gap-5 items-center justify-center">
+      <h1 className={cn(className, "text-4xl font-semibold font-katsumi tracking-widest uppercase")}>{title}</h1>
     </div>
   );
 };

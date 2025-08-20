@@ -4,18 +4,21 @@ export const expertise_data = [
     name: "Web Design",
     description: "I shape clean and meaningful visuals that don’t just look good, but communicate clearly and enhance user experience.",
     tools: [{ name: "Figma" }, { name: "User Interface" }, { name: "User Experience" }, { name: "Landing Page" }],
+    image: "/assets/projects/project-design-1.png",
   },
   {
     id: 2,
     name: "Front-End Dev",
     description: "I passionate craft intuitive and responsive interfaces that feel natural to use, making sure users enjoy every click and scroll.",
     tools: [{ name: "VueJS" }, { name: "ReactJS" }, { name: "NuxtJS" }, { name: "NextJS" }],
+    image: "/assets/projects/project-fe-1.png",
   },
   {
     id: 3,
     name: "Back-End Dev",
     description: "I build the logic and structure that keep things running smoothly — from data handling to performance and scalability.",
     tools: [{ name: "Laravel" }, { name: "Express" }, { name: "MySQL" }, { name: "PostgreSQL" }, { name: "Supabase" }],
+    image: "/assets/image.png",
   },
 ];
 
@@ -26,6 +29,8 @@ export const project_data = [
     sub_title: "Point of Sale website",
     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis cupiditate dolorem pariatur ipsa rem quos in voluptas quae unde. Est.",
     tools: [{ name: "Laravel" }, { name: "VueJS" }],
+    image: "/assets/image.png",
+    link: "/",
   },
   {
     id: 2,
@@ -33,6 +38,8 @@ export const project_data = [
     sub_title: "Blog Website",
     description: "Sit amet consectetur, adipisicing elit. Nobis cupiditate dolorem pariatur ipsa rem quos in voluptas quae unde. Est.",
     tools: [{ name: "NextJS" }],
+    image: "/assets/image.png",
+    link: "/",
   },
   {
     id: 3,
@@ -40,6 +47,8 @@ export const project_data = [
     sub_title: "Portfolio Website",
     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis cupiditate dolorem pariatur ipsa rem quos in voluptas quae unde. Est.",
     tools: [{ name: "NextJS" }],
+    image: "/assets/image.png",
+    link: "/",
   },
   {
     id: 4,
@@ -47,6 +56,8 @@ export const project_data = [
     sub_title: "Movie Rating Website",
     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis cupiditate dolorem pariatur ipsa rem quos in voluptas quae unde. Est.",
     tools: [{ name: "NextJS" }],
+    image: "/assets/image.png",
+    link: "/",
   },
 ];
 
